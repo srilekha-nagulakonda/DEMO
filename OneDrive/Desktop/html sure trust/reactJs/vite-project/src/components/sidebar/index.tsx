@@ -1,7 +1,7 @@
 import { VStack, Heading, Avatar } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
-import { MdOutlineExplore } from "react-icons/md"
+import { MdOutlineExplore } from "react-icons/md";
 import CustomNavLink from "./nav-link";
 
 export default function Sidebar() {
@@ -30,12 +30,18 @@ const navLinks = [
     label: "Home",
   },
   {
-    href:"/explore",
-    icon:<MdOutlineExplore size = {24}/>
-    label :"Explore",
+    href: "/explore",
+    icon: <MdOutlineExplore size={24} />,
+    label: "Explore",
   },
   {
-    href:"/srilekha",
-    
-  }
+    href: "/srilekha-nagulakonda",
+    icon: (
+      <Avatar
+        src="https://avatars.githubusercontent.com/u/116480390?s=400&v=4"
+        size="sm"
+      />
+    ),
+    label: "Profile",
+  },
 ];
